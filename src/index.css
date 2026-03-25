@@ -1,0 +1,76 @@
+:root {
+  --text: #334155;
+  --text-h: #0f172a;
+  --bg: #f8fafc;
+  --border: rgba(148, 163, 184, 0.25);
+  --panel: rgba(255, 255, 255, 0.78);
+  --accent: #0f766e;
+  --accent-strong: #0f766e;
+  --accent-soft: rgba(15, 118, 110, 0.12);
+  --navy: #0f172a;
+  --sans: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --heading: "Trebuchet MS", "Segoe UI", sans-serif;
+
+  font: 18px/1.5 var(--sans);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  background: var(--bg);
+}
+
+#root {
+  min-height: 100svh;
+  width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--heading);
+  font-weight: 700;
+  color: var(--text-h);
+}
+
+h1 {
+  margin: 0 0 24px;
+  font-size: clamp(2.8rem, 5vw, 4.8rem);
+  line-height: 0.98;
+}
+
+h2 {
+  margin: 0 0 12px;
+  font-size: clamp(2rem, 3vw, 3rem);
+}
+
+h3 {
+  margin: 0 0 12px;
+  font-size: 1.2rem;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
